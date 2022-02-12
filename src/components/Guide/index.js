@@ -23,8 +23,7 @@ const Guide = () => {
 					style={{ height: "100px", width: "100px" }}
 				/>
 				<h4 className="guide-text">
-					Browse our online{" "}
-					<Link to="/services">telehealth services</Link>
+					Browse our onlinetelehealth services
 				</h4>
 			</div>
 			<div className="guide-section">

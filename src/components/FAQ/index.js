@@ -13,7 +13,7 @@ const FAQ = ({ data }) => {
 		setExpanded(newExpanded ? panel : false);
 	};
 	return (
-		<div className="faq-container">
+		<div className="faq-container" id="faq">
 			<Typography sx={{ fontSize: "24px" }}>
 				Frequently Asked Questions
 			</Typography>

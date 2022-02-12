@@ -29,8 +29,12 @@ const AppNavbar = () => {
 							<NavDropdown.Item as={NavLink} to="/subscriptions">
 								Subscriptions
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">
-								User Guides
+							<NavDropdown.Item
+								href="https://www.essilor.com/en/vision-tests/test-your-vision/"
+								target="blank"
+								rel="noopener noreferrer"
+							>
+								Test Your Vision
 							</NavDropdown.Item>
 							{/* <NavDropdown.Divider />
 		  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
@@ -38,7 +42,7 @@ const AppNavbar = () => {
 						<Nav.Link as={NavLink} to="/market">
 							Marketplace
 						</Nav.Link>
-						<Nav.Link href="#services">FAQ</Nav.Link>
+						<Nav.Link href="/#faq">FAQ</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
