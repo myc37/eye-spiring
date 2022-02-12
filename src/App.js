@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Subscription from "./pages/Subscription";
 import Marketplace from "./pages/Marketplace";
 import AppNavbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 function App() {
 	return (
 		<div>
@@ -14,6 +16,7 @@ function App() {
 				<Route path="/market" element={<Marketplace />} />
 				<Route path="/subscriptions" element={<Subscription />} />
 			</Routes>
+			<Footer />
 		</div>
 	);
 }
