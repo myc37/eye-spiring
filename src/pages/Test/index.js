@@ -1,9 +1,12 @@
 import React from "react";
 
+import Footer from "../../components/Footer"
+
 
 const index = () => {
-	return <div>asdas</div>
-		
+	return <div>index
+		<Footer/>
+	</div>;
 };
 
 export default index;
