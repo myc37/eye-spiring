@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import { Link, NavLink } from 'react-router-dom'
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,14 +16,14 @@ const AppNavbar = () => {
 		
 	  </Nav>
 	  <Nav>
-	  <NavDropdown title="Services" id="collasible-nav-dropdown">
-		  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-		  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-		  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-		  <NavDropdown.Divider />
-		  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+	  <NavDropdown title="Services" id="collasible-nav-dropdown" >
+		  <NavDropdown.Item >Teleconsult</NavDropdown.Item>
+		  <NavDropdown.Item as = {NavLink} to = "/subscriptions">Subscriptions</NavDropdown.Item>
+		  <NavDropdown.Item href="#action/3.3">User Guides</NavDropdown.Item>
+		  {/* <NavDropdown.Divider />
+		  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
 		</NavDropdown>
-	  <Nav.Link href="#marketplace">Marketplace</Nav.Link>
+	  <Nav.Link as = {NavLink} to = "/market">Marketplace</Nav.Link>
 		<Nav.Link href="#services">FAQ</Nav.Link>
 	  </Nav>
 	</Navbar.Collapse>
