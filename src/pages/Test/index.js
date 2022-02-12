@@ -1,9 +1,10 @@
 import React from "react";
-import AppNavbar from "../../components/Navbar";
+import Footer from "../../components/Footer"
 
 const index = () => {
-	return <div>asdas</div>
-		
+	return <div>index
+		<Footer/>
+	</div>;
 };
 
 export default index;
