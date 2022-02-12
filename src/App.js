@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Test from "./pages/Test";
 import Home from "./pages/Home";
-import Subscriptions from "./pages/Subscription";
+import Subscription from "./pages/Subscription";
 import Marketplace from "./pages/Marketplace"
 function App() {
 	return (
@@ -10,7 +10,7 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/test" element={<Test />} />
 				<Route path = "/market" element = {<Marketplace/>}/>
-				<Route path = "/subscriptions" element = {<Subscriptions/>}/>
+				<Route path = "/subscriptions" element = {<Subscription/>}/>
 			</Routes>
 		</div>
 	);
