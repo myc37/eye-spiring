@@ -64,16 +64,18 @@ const Marketplace = () => {
 	return (
 		<React.Fragment>
 			<GlobalStyles
-				styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
+				styles={{
+					ul: { margin: 0, padding: 0, listStyle: "none" },
+					marginBottom: "4rem",
+				}}
 			/>
 			<CssBaseline />
-			<AppNavbar></AppNavbar>
 			{/* Hero unit */}
 			<Container
 				disableGutters
 				maxWidth="sm"
 				component="main"
-				sx={{ pt: 8, pb: 4 }}
+				sx={{ pt: 8, pb: 8 }}
 			>
 				<Typography
 					component="h1"
