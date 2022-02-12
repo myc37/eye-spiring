@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { DotButton, PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
-import { mediaByIndex } from "./media";
+import { getImage } from "./media";
 import "./index.css";
 
 const EmblaCarousel = ({ slides }) => {
@@ -40,13 +40,13 @@ const EmblaCarousel = ({ slides }) => {
 			<div className="embla">
 				<div className="embla__viewport" ref={viewportRef}>
 					<div className="embla__container">
-						{slides.map((index) => (
+						{slides.map((src, index) => (
 							<div className="embla__slide" key={index}>
 								<div className="embla__slide__inner">
 									<img
 										className="embla__slide__img"
-										src={mediaByIndex(index)}
-										alt="A cool cat."
+										src={getImage(index)}
+										alt={`${src}`}
 									/>
 								</div>
 							</div>

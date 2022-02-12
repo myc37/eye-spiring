@@ -13,11 +13,11 @@ const FAQ = ({ data }) => {
 		setExpanded(newExpanded ? panel : false);
 	};
 	return (
-		<div className="container">
+		<div className="faq-container">
 			<Typography sx={{ fontSize: "24px" }}>
 				Frequently Asked Questions
 			</Typography>
-			<div className="inner">
+			<div className="faq-inner">
 				{data.map((item, index) => {
 					return (
 						<Accordion
