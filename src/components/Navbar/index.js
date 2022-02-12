@@ -1,13 +1,13 @@
 import React from "react";
 import "./index.css";
-import { Link, NavLink } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AppNavbar = () => {
 	return <Navbar collapseOnSelect expand="lg" className="nav" variant="light" >
 	<Container>
-	<Navbar.Brand href="#home">AcuView</Navbar.Brand>
+	<Navbar.Brand as = {NavLink} to = "/">AcuView</Navbar.Brand>
 	<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 	<Navbar.Collapse id="responsive-navbar-nav">
 	  <Nav className="me-auto">
